@@ -116,9 +116,9 @@ def main():
     global used_private_keys
     start_time = time.time()
     try:
-        public_key_hex = "03633cbe3ec02b9401c5effa144c5b4d22f87940259634858fc7e59b1c09937852"
-        start_range = 2**129  # 0x200000000000000000000000000000000 x = 680564733841876926926749214863536422911
-        end_range = 2**130 - 1  # 0x3ffffffffffffffffffffffffffffffff y = 680564733841876926926749214863536422912
+        public_key_hex = "02e0a8b039282faf6fe0fd769cfbc4b6b4cf8758ba68220eac420e32b91ddfa673"
+        start_range = 2**159  # 0x8000000000000000000000000000000000000000 x = 730750818665451459101842416358141509827966271488
+        end_range = 2**160 - 1  # 0xffffffffffffffffffffffffffffffffffffffff y = 1461501637330902918203684832716283019655932542975
 
         print(f"Searching for private key corresponding to public key: {public_key_hex}")
         print(f" - From: {hex(start_range)}")
